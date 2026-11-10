@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Inter', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +12,146 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.custom-nav-link{
+  color: #666666 !important; 
+  margin-right: 1.5rem;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+.custom-nav-link:hover {
+  color: black !important;
+}
+
+
+/* Hamburger button */
+.menu-toggle {
+    border: none !important;
+    background: transparent !important;
+    color: #424242;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 8px;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle:active {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Main mega menu */
+.mega-menu {
+    width: min(700px, calc(100vw - 24px));
+    padding: 0;
+    margin-top: 0 !important;
+    border: none !important;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+/* Top product section */
+.mega-top {
+    padding: 30px 20px 20px;
+    background: #fff;
+}
+
+.mega-top .col-3 {
+    padding: 0 8px;
+}
+
+.product-icon {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: #424242;
+}
+
+.product-icon.kite {
+    color: #ff4b25;
+}
+
+.product-icon.console {
+    color: #0065d1;
+}
+
+.product-icon.coin {
+    color: #e6b52e;
+}
+
+.mega-top h6 {
+    font-size: 15px;
+    color: #424242;
+    margin-bottom: 8px;
+}
+
+.mega-top p {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 0;
+}
+
+/* Bottom section */
+.mega-bottom {
+    background: #fafafa;
+    padding: 35px 30px 25px;
+}
+
+.mega-bottom h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.mega-bottom img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.mega-bottom a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.mega-bottom a:hover {
+    color: #387ed1;
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+    .mega-menu {
+        width: calc(100vw - 24px);
+    }
+
+    .mega-top {
+        padding: 20px 8px;
+    }
+
+    .mega-top h6 {
+        font-size: 12px;
+    }
+
+    .mega-top p {
+        font-size: 10px;
+    }
+
+    .mega-bottom {
+        padding: 25px 15px;
+    }
+
+    .mega-bottom a {
+        font-size: 12px;
+    }
 }
