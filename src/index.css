@@ -24,7 +24,6 @@ code {
   color: black !important;
 }
 
-
 /* Hamburger button */
 .menu-toggle {
     border: none !important;
@@ -129,6 +128,10 @@ code {
     color: #387ed1;
 }
 
+.custom-nav-link:hover {
+    color: #387ed1 !important; 
+}
+
 /* Small screens */
 @media (max-width: 576px) {
     .mega-menu {
@@ -154,4 +157,15 @@ code {
     .mega-bottom a {
         font-size: 12px;
     }
+}
+
+.footer{
+    font-family: "inter", serif;
+}
+
+.custom-footer-link a{
+    text-decoration: none;
+    font-size: 14px;   
+    color: rgb(134, 124, 124);
+    line-height: 35px;
 }
